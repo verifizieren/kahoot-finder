@@ -7,7 +7,7 @@ class KahootGameFinder:
         self.session = requests.Session()
 
     def get_game_info(self, id):
-        # Send a GET request to retrieve game information
+        # Send a GET request to retrieve kahoot game information
         response = self.session.get(f'https://kahoot.it/reserve/session/{id}')
         return response
 
